@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./main.css">
+    <title>Portfolio Card</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Animated Color Circle -->
+        <span class="circle-blue"></span>
+        <span class="circle-red"></span>
+
+        <!-- Profile Card -->
+        <div class="card">
+
+            <img src="./assets/IMG_20201125_003425-removebg-preview (1)-01.jpeg.jpg" alt="">
+            <!-- <img src="./assets/ABUTALIF PHOTO.jpeg.jpg" alt=""> -->
+
+            <h2 class="card-tittle">Abutalif Khan</h2>
+            <h4 class="card-sub-tittle">MERN Stack Developer</h4>
+
+            <!-- Share &  follow button -->
+            <div class="btn-box">
+
+                <Button class="btn-share" onclick="openModal()"><i class='bx bxs-share bx-flip-horizontal' ></i>Share My Profile</Button>
+                <button class="btn-follow" onclick="following()"><i class='bx bx-plus bx-flip-horizontal' ></i>Follow Me</button>
+
+            </div>
+
+        </div>
+
+        <!-- Modal  Comming after click the share button-->
+        <div class="modal-wrapper">
+            <div class="head-modal">
+                <h2>Share My Profile</h2>
+                <button onclick="closeModal()"><i class='bx bx-x'></i></button>
+            </div>
+            <hr>
+            <h3>Share this via</h3>
+
+            <!-- Social Buttons -->
+            <div class="social-btn">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>        
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>        
+                <a href="#"><i class='bx bxl-twitter'></i></i></a>        
+                <a href="#"><i class='bx bxl-instagram' ></i></a>        
+                <a href="#"><i class='bx bxs-envelope'></i></a>    
+            </div>
+            <div class="copy-box">
+                
+            </div>
+        </div> 
+
+        <!-- Overlay for background fade -->
+        <div class="overlay" onclick="closeModal()"></div>      
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

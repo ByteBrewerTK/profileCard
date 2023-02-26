@@ -1,0 +1,28 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@mixin a-center {
+    display: flex;
+    align-items: center;
+    
+}
+@mixin j-center {
+    display: flex;
+    justify-content: center;
+    
+}
+@mixin button-prop {
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, 0.562);
+    border-radius: .5rem;
+    color: white;
+    
+    gap: .4rem;
+}
