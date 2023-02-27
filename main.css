@@ -183,7 +183,7 @@ html {
 }
 .modal-wrapper {
   width: 30%;
-  height: 20%;
+  height: 30%;
   background-color: rgb(55, 55, 55);
   border: 1px solid gray;
   position: absolute;
@@ -198,6 +198,9 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
+}
+.modal-wrapper .head-modal h2 {
+  font-size: 2rem;
 }
 .modal-wrapper .head-modal button {
   cursor: pointer;
@@ -222,6 +225,7 @@ html {
   color: rgb(0, 0, 0);
 }
 .modal-wrapper h3 {
+  font-size: 1.3rem;
   margin: 1rem 0;
 }
 .modal-wrapper .social-btn {
@@ -297,6 +301,69 @@ html {
 .modal-wrapper .social-btn a .bxs-envelope:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+.modal-wrapper .copy-box {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  margin-top: 4rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.modal-wrapper .copy-box .text {
+  background: transparent;
+  width: 80%;
+  height: 30px;
+  outline: transparent;
+  border: none;
+  color: white;
+}
+.modal-wrapper .copy-box button {
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+}
+.modal-wrapper .copy-box button::before {
+  content: "Copied";
+  color: black;
+  width: 60px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 5rem;
+  bottom: 9rem;
+  right: 1rem;
+  display: none;
+}
+.modal-wrapper .copy-box button::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 8.5rem;
+  right: 3.4rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  display: none;
+}
+.modal-wrapper .copy-box button .bx-copy {
+  padding: 5px;
+  border: none;
+  position: relative;
+}
+.modal-wrapper .copy-box .bx-link {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+.modal-wrapper .active-pop button::before,
+.modal-wrapper .active-pop button::after {
+  display: block;
 }
 
 .active-modal {

@@ -139,7 +139,7 @@ html{
 
 .modal-wrapper{
     width: 30%;
-    height: 20%;
+    height: 30%;
     background-color: rgb(55, 55, 55);
     border: 1px solid gray;
     position: absolute;
@@ -155,8 +155,11 @@ html{
     .head-modal{
         display: flex;
         justify-content: space-between;
-        
         margin:.5rem 0 ;
+
+        h2{
+            font-size: 2rem;
+        }
         
         button{
             cursor: pointer;
@@ -183,7 +186,9 @@ html{
             }
         }
     }
+
     h3{
+        font-size: 1.3rem;
         margin: 1rem 0 ;
     }
     .social-btn{
@@ -267,7 +272,76 @@ html{
         }
 
     }
+    .copy-box{
+        background: transparent;
+        @include m.a-center;
+        justify-content: space-between;
+        border: 1px solid white;
+        margin-top: 4rem;
+        border-radius: .7rem;
+        overflow: hidden;
+        .text{
+
+            background: transparent;
+            width: 80%;
+            height: 30px;
+            outline: transparent;
+            border: none;
+            color: white;
+        }
+        button{
+            border: none;
+            cursor: pointer;
+            margin: .5rem;
+            border-radius: .3rem;
+            // opacity: 0;
+ 
+            &::before{
+                content: "Copied";
+                color: black;
+                width: 60px;
+                height: 20px;
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                border-radius: 5rem;
+                bottom: 9rem;
+                right: 1rem;
+                // opacity: 0;
+                display: none;
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                bottom:8.5rem;
+                right: 3.4rem;
+                background-color: rgb(255, 255, 255);
+                @include m.center;
+                transform: rotate(45deg);
+                display: none;
+            }
+            
+            
+            
+            .bx-copy{
+                padding: 5px;
+                border: none;
+                position: relative; 
+            }
+        }
+        
+        .bx-link{
+            font-size: 2rem;
+            padding-left: 1rem;
+        }
+    }
+    .active-pop button::before,
+    .active-pop button::after{
+        display: block;
+    }
 }
+
 .active-modal{
     scale:1;
     opacity: 1;
